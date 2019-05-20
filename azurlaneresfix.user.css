@@ -1,0 +1,137 @@
+/* ==UserStyle==
+@name           AzurLaneRESFix
+@namespace      https://github.com/RadioactiveGhost/AzurLaneRESFix
+@version        1.0.0
+@description    A fix for the Azur Lane subreddit CSS when using RES nightmode
+@author         RadioactiveGhost
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.reddit.com/r/AzureLane/"), url-prefix("https://re.reddit.com/r/AzureLane/"), url-prefix("https://of.reddit.com/r/AzureLane/"), url-prefix("https://old.reddit.com/r/AzureLane/") {
+.res-nightmode body, .res-nightmode #siteTable {
+    background-color: #00273c !important
+}
+.res-nightmode #siteTable .thing.link {
+    background-color: #00466c !important;
+    border:none !important;
+}
+
+.res-nightmode .entry.res-selected, .res-nightmode .tagline .flair,.res-nightmode .entry .top-matter .tagline .flair {
+    background-color: #00466c !important;
+}
+.res-nightmode span.subscribers, .res-nightmode p.users-online, .res-nightmode form.flairtoggle, .res-nightmode div.tagline, .res-nightmode div.morelink, .res-nightmode a.access-required, .res-nightmode .titlebox .tagline .flair, .res-nightmode .titlebox .bottom,.res-nightmode .titlebox .bottom .flair{
+    background-color: #464545 !important;
+}
+.res-nightmode .arrow {
+    margin: 2px 0px 0px 0px;
+    height: 14px;
+    display: block;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+
+/* Side bar fixes */
+.res-nightmode .side {
+    border:none !important;
+    border-left: 2px solid #1e1d1d !important;
+    border-bottom: 2px solid #1e1d1d !important;
+}
+.res-nightmode .linkinfo {
+    border-color: #006cb0 !important;
+}
+
+.res-nightmode .res .titlebox .fancy-toggle-button{
+    margin-right: 15px;
+}
+
+.res-nightmode .res-fancy-toggle-button {
+    height: 25px;
+    padding: 3px 7px;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 25px;
+    background: rgba(112, 210, 66,0.3);
+    border: 1px solid rgb(112, 210, 66);
+    color: rgb(112, 210, 66) !important;
+    outline: 0;
+    transition: all 0.2s ease-in;
+}
+.res-nightmode .res-fancy-toggle-button.remove {
+    background: rgba(210,66,66,0.3);
+    border: 1px solid rgb(210,66,66);
+    color: rgb(210,66,66) !important;
+}
+
+.res-nightmode .flairtoggle {border-color: #006cb0 !important;}
+
+form.res-sr-style-toggle {
+    border: 1px solid #006cb0 !important;
+    background-color: #464545 !important;
+}
+.res-nightmode a.helplink.access-required {
+    background-color: #006cb0 !important;
+    color: #ddd !important;
+}
+.res-nightmode .spacer .content .flair {
+    background-color: #262626 !important;
+}
+.res-nightmode h3 a {
+    background-color: #262626 !important;
+}
+
+.res-nightmode a[href="http://re.reddit.com/r/AzureLane/#re"]{
+    background-color: #5b2f2f !important;
+}
+.res-nightmode a[href="http://of.reddit.com/r/AzureLane/#of"]{
+    background-color: #2f5b32 !important;
+}
+.res-nightmode .create,.res-nightmode .create .spacer {
+    background-color:#fff0 !important;
+}
+.res-nightmode .create .spacer a.login-required {
+    margin-top: 2px !important;
+    background-color: #f000 !important;
+/*----------------*/
+    
+/* Comments page fixes */    
+}
+.res-nightmode .entry.res-selected .md-container {
+    background-color: #00466c !important;
+}
+.res-nightmode body.comments-page .content[role="main"] {
+    background: #00466c !important;
+}
+.res-nightmode body.comments-page #siteTable{
+    background: #00466c !important;
+}
+.res-nightmode body.comments-page a.expand{
+    background: #262626 !important;
+}
+.res-nightmode body.comments-page .tagline .flair{
+    background-color: #161616 !important;
+}
+
+
+/*---------------------*/
+.res-nightmode .side #search .infobar {
+    background-color: #393939f5 !important;
+}
+/* Search page fixes */
+.res-nightmode body.search-page .content[role="main"],.res-nightmode .content[role="main"] .flair {
+    background-color: #393939 !important;
+}
+/*-------------------*/
+
+/* Top page fixes */
+.res-nightmode body.top-page .content[role="main"]{
+    background: #0000 !important
+}
+/*----------------*/
+}
